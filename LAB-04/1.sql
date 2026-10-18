@@ -1,0 +1,14 @@
+DECLARE
+V_NAME EMPLOYEE.NAME %TYPE;
+V_SALARY EMPLOYEE.SALARY %TYPE;
+CURSOR C_EMP IS SELECT NAME, SALARY FROM EMPLOYEE;
+BEGIN
+OPEN C_emp;
+Loop
+Fetch C_emp Into V_Name, V_Salary;
+Exit when C_emp%Notfound;
+DBMS_OUTPUT.PUT_LINE(V_Name || V_Salary);
+END Loop;
+DBMS_OUTPUT.PUT_LINE(C_emp%RowCount);
+Close C_emp;
+END;

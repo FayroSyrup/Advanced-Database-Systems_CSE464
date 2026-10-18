@@ -1,0 +1,23 @@
+/*
+DECLARE
+NUM1 NUMBER:= &NUMBER1;
+NUM2 NUMBER:= &NUMBER2;
+BEGIN
+DBMS_OUTPUT.PUT_LINE('The sum is:'|| (NUM1 + NUM2) );
+END;
+*/
+
+
+-- string input
+/*
+DECLARE
+NUM1 NUMBER:= &NUMBER1;
+NUM2 NUMBER:= &NUMBER2;
+NAME VARCHAR2(30):= '&YOUR_NAME';
+BEGIN
+DBMS_OUTPUT.PUT_LINE('The sum is:'|| (NUM1 + NUM2) || ' ' || NAME);
+END;
+*/
+
+
+
